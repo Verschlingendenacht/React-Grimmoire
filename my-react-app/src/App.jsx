@@ -6,12 +6,15 @@ import Card from './Card.jsx'
 
 import Button from './Button/Button.jsx'
 import Button2 from './Button2.jsx'
+import Button3 from './Button3.jsx'
 
 import Student from './Students.jsx'
 import UserGreeting from './UserGreeting.jsx'
 
 import List from './List.jsx'
 import List2 from './List2.jsx'
+
+import ProfilePicture from './ProfilePicture.jsx'
 
 //just noticed that, if something ain't working or defined it'll output as a blank page
 
@@ -24,6 +27,10 @@ import List2 from './List2.jsx'
 
 //conditional rendering = allows to control what gets rendered based on conditions
 //(show, hide or change components)
+
+//click event = an interaction when a user clicks a specific element
+// we can respond to clicks by passing a callback to the onClick event handler
+
 
 function App() {
 
@@ -61,6 +68,10 @@ function App() {
       <List/>
       <List2 items={fruits} category="Fruits"/> {/*reusable list*/}
       {vegetables.length > 0 ? <List2 items={vegetables} category="Vegetables"/> : null} {/*do not display if empty*/}
+
+      {/*onClick event*/}
+      <Button3/>
+      <ProfilePicture/>
 
       <Footer/>
     </>
