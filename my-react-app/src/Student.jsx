@@ -12,7 +12,7 @@ function Student({name = "John Doe", age=-1, isStudent=false}){
     );   
 }
 
-Student.propTypes = { //define the type for each variable used within the function applied
+Student.propTypes = { //argument type definition
     name: PropTypes.string,
     age: PropTypes.number,
     isStudent: PropTypes.bool
